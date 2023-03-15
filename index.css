@@ -1,0 +1,44 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* Standard config */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: linear-gradient(135deg, #e9cab5 0%, #ffa366 100%);
+  --color-primary: black;
+  --color-secundary: #33334d;
+  --botton-padding: 20px 40px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200%;
+  overflow: hidden;
+  padding: 80px 0px;
+}
+
+.subtittle {
+  color: var(--color-secundary);
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+
+.encabezado{
+  height: 100vh;
+  background-image: var(--background), url('./image/descarga.jpeg');
+  background-repeat:no-repeat;
+  background-size: cover; /* para abarcar el 100% */
+  background-attachment:fixed; /* Efecto Paralize */
+  background-position: center; /* centrar el background */
+  position: relative; /* para posicionar mi wave*/
+}
