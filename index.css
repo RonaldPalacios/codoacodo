@@ -8,37 +8,81 @@
   padding: 0;
 }
 
-:root {
-  --background: linear-gradient(135deg, #e9cab5 0%, #ffa366 100%);
-  --color-primary: black;
-  --color-secundary: #33334d;
-  --botton-padding: 20px 40px;
-}
-
 body {
   font-family: 'Raleway', sans-serif;
 }
 
+.encabezado{
+
+height: 500px;
+
+}
+
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 1200%;
+  max-width: 1200px;
   overflow: hidden;
   padding: 80px 0px;
+  
+  
 }
 
-.subtittle {
-  color: var(--color-secundary);
-  font-size: 2.5rem;
-  margin-bottom: 35px;
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: #88cc00;
+ }
+
+ .nav-items{
+  padding: 5px;
+  margin: 10px 15px;
+  text-decoration: none;
+  color: white;
+ }
+
+ 
+ .encabezado_tittle{
+  color: #88cc00;
+  font-size: 3rem;
+  font-weight: 100px;
+  margin: 35px 10px;
+  display: flex;  
+  justify-content: center;
+  
+ }
+
+.encabezado_subtittle{
+  color: #88cc00;
+  font-size: 1.5rem;
+  display: flex;  
+  justify-content: center;
+  
 }
 
-.encabezado{
-  height: 100vh;
-  background-image: var(--background), url('./image/descarga.jpeg');
-  background-repeat:no-repeat;
-  background-size: cover; /* para abarcar el 100% */
-  background-attachment:fixed; /* Efecto Paralize */
-  background-position: center; /* centrar el background */
-  position: relative; /* para posicionar mi wave*/
+.main_container{
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.main_container .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  
+}
+
+.main_container .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
 }
